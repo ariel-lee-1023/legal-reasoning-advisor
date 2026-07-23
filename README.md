@@ -102,4 +102,4 @@ Issues and pull requests are welcome. The most useful contributions are worked d
 
 ## License
 
-[MIT](LICENSE).
+MIT © 2026 Ariel Lee. [See LICENSE](LICENSE).
