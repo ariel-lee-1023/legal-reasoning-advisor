@@ -13,6 +13,12 @@ Because this is a prose skill rather than code, versioning is read as follows:
 
 ## [Unreleased]
 
+### Changed
+
+- Rewrote the master as a first-person reasoning advisor, retaining the four moves, earned classification, relational precision, precedent scope, and explicit openness.
+- Moved procedural routing to the final Loading depth section and retained full judgment digestion as an optional tool.
+- Added root AGENTS.md and updated documentation pointers.
+
 ## [1.0.0] — 2026-07-22
 
 First public release.

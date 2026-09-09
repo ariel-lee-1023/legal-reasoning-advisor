@@ -34,20 +34,21 @@ A single sentence often fuses several. *"The defendant, as owner, had the right 
 
 ```
 legal-reasoning-advisor/
-├── SKILL.md                          # the skill: workflow, four moves, tool routing
+├── SKILL.md                          # expert reasoning core + task-triggered loading
 ├── references/
 │   ├── move-taxonomy.md              # the diagnostic core; recognition cues, worked diagnoses
 │   ├── common-law-method.md          # the governing stance (Coke)
 │   ├── hohfeld-toolkit.md            # right / duty / privilege / power / immunity
 │   ├── precedent-method.md           # how precedent actually constrains (Duxbury)
-│   └── precedent-extraction.md       # full judgment-digestion pipeline (Stage-4 tool)
+│   └── precedent-extraction.md       # full judgment-digestion pipeline (loaded when requested)
+├── AGENTS.md                         # default role and project working standards
 ├── README.md
 ├── CHANGELOG.md
 ├── LICENSE
 └── .gitignore
 ```
 
-`SKILL.md` is loaded first; the files in `references/` are read on demand, only when a particular tangle calls for them.
+`SKILL.md` first establishes the advisor’s reasoning voice, then lists loading triggers; the files in `references/` are read on demand, only when a particular tangle calls for them.
 
 ## Installation
 

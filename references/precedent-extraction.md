@@ -1,6 +1,6 @@
 # Precedent Extraction — digesting one judgment (a tool, not the center)
 
-This is the full extraction pipeline inherited from the earlier `precedent-engineer` skill, preserved intact and re-tasked as a **Stage-4 tool**. Invoke it when — and only when — the user wants a *specific judgment fully digested* into a citable, scope-marked, relation-mapped record: a case note, digest entry, precedent-database row, memo rule, or archival item. For "help me reason through this argument," you usually do **not** need this; you need the diagnosis in the main workflow. Do not run the full template on every case that comes up.
+This is the full extraction pipeline inherited from the earlier `precedent-engineer` skill, preserved as an **on-demand tool**. Invoke it when — and only when — the user wants a *specific judgment fully digested* into a citable, scope-marked, relation-mapped record: a case note, digest entry, precedent-database row, memo rule, or archival item. For "help me reason through this argument," you usually do **not** need this; you need the diagnosis in the main workflow. Do not run the full template on every case that comes up.
 
 Two common-law amendments to the original pipeline (from `common-law-method.md` and `precedent-method.md`), applied throughout:
 - **Do not force a clean ratio.** If ratio and dictum blur, say so and give the candidates; a defended split, not an assumed one.
