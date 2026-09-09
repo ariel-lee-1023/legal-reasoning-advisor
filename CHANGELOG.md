@@ -13,6 +13,10 @@ Because this is a prose skill rather than code, versioning is read as follows:
 
 ## [Unreleased]
 
+### Consistency fixes (2026-09-09)
+
+- Made digest fields, relational mapping, and file output conditional on the task; aligned authority verification and README expectations with the expert core.
+
 ### Changed
 
 - Rewrote the master as a first-person reasoning advisor, retaining the four moves, earned classification, relational precision, precedent scope, and explicit openness.

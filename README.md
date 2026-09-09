@@ -45,6 +45,7 @@ legal-reasoning-advisor/
 ├── README.md
 ├── CHANGELOG.md
 ├── LICENSE
+├── NOTICE.md                         # source attribution and licensing scope
 └── .gitignore
 ```
 
@@ -83,7 +84,7 @@ No command is needed; the skill triggers on the shape of the request. Representa
 - "Digest this judgment into a case note with scope conditions." *(invokes the extraction pipeline)*
 - "Build the strongest counter-argument from the same map."
 
-The usual deliverable is a sorted map plus a clarified conclusion, inline. A file is produced only when you want one.
+The deliverable is a clarified conclusion with enough reasoning to inspect it. A short question may take one paragraph; a complex brief may benefit from a sorted map. Work stays inline unless you request a file.
 
 ## Sources
 
@@ -95,7 +96,7 @@ The reference files synthesize, in the author's own words:
 
 ## Disclaimer
 
-This is a reasoning aid, not legal advice, and it does not create a lawyer–client relationship. It is designed to make the structure of an argument visible — including where the argument runs out — not to tell you the answer. Verify every authority against the primary sources for your jurisdiction, and have a qualified lawyer confirm anything that matters.
+This is a reasoning aid, not legal advice, and it does not create a lawyer–client relationship. It gives the conclusion supported by the materials and makes the reasoning, conditions, and open questions visible. Verify every authority against the primary sources for your jurisdiction, and have a qualified lawyer confirm anything that matters.
 
 ## Contributing
 

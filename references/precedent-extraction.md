@@ -15,7 +15,7 @@ Two common-law amendments to the original pipeline (from `common-law-method.md` 
 
 **Do not use for:** stress-testing an argument, finding a brief's weak joint, sorting the logic of a claim, answering a client problem, or explaining doctrine — those stay in the main diagnostic workflow. Extraction is archival; diagnosis is the center.
 
-**Output:** produce the record as a file/artifact when the user wants something reusable; inline is fine for a quick single digest.
+**Output:** work inline by default. Produce a file/artifact when the user requests one. Adapt the record to the requested depth and format; a reusable case note can also be delivered inline.
 
 ---
 
@@ -29,11 +29,13 @@ Two common-law amendments to the original pipeline (from `common-law-method.md` 
 
 ## Pipeline
 
+Use the steps needed for the requested digest. A narrow holding extraction need not include a full relational map or authority network; mark material uncertainty without filling irrelevant fields.
+
 1. **Posture and issue.** Extract court, level, procedural posture, claim type, procedural vehicle, disposition, and the issue *actually decided*. Split multiple issues before extracting any rule; do not merge procedural, factual, and substantive issues.
 2. **Material facts.** Identify the facts the court treated as operative; separate them from background narrative; mark materiality express / implied / inferred; note which facts a later court could use to distinguish.
 3. **Conclusion and necessary reasoning.** State the disposition and the legal conclusion; isolate the reasoning necessary to it; separate the deciding majority's reasoning from concurrence, dissent, and background.
 4. **Ratio vs. obiter.** Treat ratio as the proposition(s) tied to material facts and necessary to the disposition. Treat as obiter what is unnecessary, hypothetical, unargued, or beyond the decided issue — but record weighty dicta separately with a note on persuasive value (do not discard as worthless). If ratio and dicta blur, present candidates and mark the ambiguity. If independent grounds each support the outcome, list multiple rationes rather than discarding one.
-5. **Hohfeld mapping** (see `hohfeld-toolkit.md`). For each operative legal consequence, classify the relation — right/duty, privilege/no-right, power/liability, immunity/disability. Do not use "right" generically. Preserve the court's original term in a note where the mapping is a translation.
+5. **Hohfeld mapping, when useful** (see `hohfeld-toolkit.md`). Where a relation is material and reasonably clear, classify it — right/duty, privilege/no-right, power/liability, immunity/disability. Do not use "right" generically. Preserve the court's original term in a note where the mapping is a translation.
 6. **Who against whom.** For each relation: holder; bearer (specific party, class, official, body, or the world); the act, thing, event, or *legal change* at issue; the trigger; the defeater.
 7. **Precedent-network position** (see `precedent-method.md`). For each visible authority, classify treatment: follows / distinguishes / limits / extends / departs / overrules / applies / analogizes / questions / reserves / leaves unresolved. Distinguish express from inferred treatment. Do not infer overruling from mere non-application. State authority force only after checking hierarchy, jurisdiction, and publication status.
 8. **Scope conditions.** Jurisdictional, procedural, factual, institutional, temporal, remedial. Note the facts needed to extend and the facts that would support a distinction.
@@ -45,6 +47,8 @@ Two common-law amendments to the original pipeline (from `common-law-method.md` 
 ---
 
 ## Output template (Markdown)
+
+This is a full-record example, not a required answer shape. Select relevant fields or use the user's requested format.
 
 ```markdown
 ## Case Identifier
@@ -133,4 +137,4 @@ Impersonal, neutral, compressed, citable; no rhetoric, no advocacy, no emotional
 
 ## Configurable choices (ask or default)
 
-Narrow vs. broad holding (default: narrowest defensible, with broader formulations at lower confidence on request) · Hohfeld aggressiveness (default: map only where the relation type is reasonably clear) · single vs. multiple rules for multi-issue cases · fragmented-opinion handling (narrowest-ground vs. separate-opinion mapping vs. uncertainty-first) · persuasive-dicta as a separate field · authority-hierarchy from visible text only vs. external research (only if authorized) · illustrations always / on request / omitted · output format Markdown / JSON / YAML / table · confidence scale high-med-low / numeric / narrative · subsequent-treatment in scope only if supplied vs. researched on request · comparative-law mode for non-common-law judgments with modified precedent-force assumptions.
+Narrow vs. broad holding (default: narrowest defensible, with broader formulations at lower confidence on request) · Hohfeld aggressiveness (default: map only where the relation type is reasonably clear) · single vs. multiple rules for multi-issue cases · fragmented-opinion handling (narrowest-ground vs. separate-opinion mapping vs. uncertainty-first) · persuasive-dicta as a separate field · authority-hierarchy from supplied text for a closed-record task vs. primary-source verification when current force matters (respect an explicit no-research constraint and mark any resulting limit) · illustrations always / on request / omitted · output format Markdown / JSON / YAML / table · confidence scale high-med-low / numeric / narrative · subsequent treatment limited to supplied material for a closed-record digest vs. verified when the task depends on current authority · comparative-law mode for non-common-law judgments with modified precedent-force assumptions.
